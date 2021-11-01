@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // copier it with xml code
         binding = ActivityMainBinding.inflate(layoutInflater)
-
+       setContentView(binding.root)
         binding.button.setOnClickListener { infoUser() }
 
     }
