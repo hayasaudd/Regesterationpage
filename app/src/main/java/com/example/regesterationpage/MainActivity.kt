@@ -36,10 +36,8 @@ class MainActivity : AppCompatActivity() {
         {
             finaltextmasseg.text = "yor information is not completed tray to fill it again"
         }else if (password==password2){ //check the password similar renter password or not
-            binding.textMassege.text="your name is $nameuser your mail is $email you last number of password is ${password2.last()}" // display information
-        }else finaltextmasseg.text="not the same password"
-
-    }
+            // display information
+            binding.textMassege.text="your name is $nameuser ......... your mail is $email ........  you last number of password is ${password2.last()}" } else finaltextmasseg.text="not the same password" }
 }
 
 
