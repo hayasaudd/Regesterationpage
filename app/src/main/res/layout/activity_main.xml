@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAEAC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:foregroundTint="#05FDFCFC"
+        android:text="@string/registoration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:drawableTint="#00683537"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/write_your_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_Name"
+        android:layout_width="166dp"
+        android:layout_height="29dp"
+        android:background="#9CAEAC"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="214dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9CAEAC" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/write_your_email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="166dp"
+        android:layout_height="27dp"
+        android:background="#9CAEAC"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:autofillHints="@" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/write_your_birth_date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="168dp"
+        android:layout_height="32dp"
+        android:autofillHints="Date"
+        android:background="#9CAEAC"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/defultdate"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="164dp"
+        android:layout_height="29dp"
+        android:autofillHints="password"
+        android:background="#9CAEAC"
+        android:ems="10"
+        android:inputType="numberPassword"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/reinter_password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword2"
+        android:layout_width="164dp"
+        android:layout_height="29dp"
+        android:autofillHints="reinterPass"
+        android:background="#9CAEAC"
+        android:ems="10"
+        android:inputType="numberPassword"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/gender"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <RadioButton
+        android:id="@+id/femail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/femail" />
+
+    <RadioButton
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CAEAC"
+        android:text="@string/mail" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registor" />
+
+    <TextView
+        android:id="@+id/text_massege"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registoration"
+        app:layout_constraintTop_toBottomOf="@id/text_massege"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"/>
+
+    </RadioGroup>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
