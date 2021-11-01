@@ -14,4 +14,7 @@
     <string name="mail">Mail</string>
     <string name="write_your_name">Write your Name:</string>
     <string name="registor">Registor</string>
+    <string name="name">Name</string>
+    <string name="reinterpass">reinterPass</string>
+    <string name="password1">password</string>
 </resources>
