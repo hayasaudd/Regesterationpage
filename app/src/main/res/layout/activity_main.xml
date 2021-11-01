@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,18 +9,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#9CAEAC"
+        android:background="#FF00111"
         android:foregroundTint="#05FDFCFC"
         android:text="@string/registoration"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:drawableTint="#00683537"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintBottom_toBottomOf=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,23 +29,20 @@
         android:background="#9CAEAC"
         android:text="@string/write_your_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="150dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/user_Name"
-        android:layout_width="166dp"
-        android:layout_height="29dp"
+        android:layout_width="162dp"
+        android:layout_height="25dp"
         android:background="#9CAEAC"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="214dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#9CAEAC" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -54,20 +51,24 @@
         android:background="#9CAEAC"
         android:text="@string/write_your_email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_Name"  />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="166dp"
         android:layout_height="27dp"
+        android:autofillHints="@"
         android:background="#9CAEAC"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="271dp"
-        android:autofillHints="@" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView2"
@@ -76,8 +77,10 @@
         android:background="#9CAEAC"
         android:text="@string/write_your_birth_date"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -88,8 +91,10 @@
         android:ems="10"
         android:inputType="date"
         android:text="@string/defultdate"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -98,8 +103,10 @@
         android:background="#9CAEAC"
         android:text="@string/password"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="374dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextDate" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -109,8 +116,10 @@
         android:background="#9CAEAC"
         android:ems="10"
         android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
@@ -119,8 +128,10 @@
         android:background="#9CAEAC"
         android:text="@string/reinter_password"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="438dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword" />
 
     <EditText
         android:id="@+id/editTextNumberPassword2"
@@ -130,8 +141,10 @@
         android:background="#9CAEAC"
         android:ems="10"
         android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <TextView
         android:id="@+id/textView6"
@@ -140,48 +153,63 @@
         android:background="#9CAEAC"
         android:text="@string/gender"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="502dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword2" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#9CAEAC"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="537dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView6">
 
-    <RadioButton
-        android:id="@+id/femail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#9CAEAC"
-        android:text="@string/femail" />
+        <RadioButton
+            android:id="@+id/femail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9CAEAC"
+            android:text="@string/femail" />
 
-    <RadioButton
-        android:id="@+id/mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#9CAEAC"
-        android:text="@string/mail" />
+        <RadioButton
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9CAEAC"
+            android:text="@string/mail" />
 
+    </RadioGroup>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registor" />
+        android:layout_margin="0dp"
+        android:background="#F001111"
+        android:text="@string/registor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"/>
 
     <TextView
         android:id="@+id/text_massege"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="@string/registoration"
-        app:layout_constraintTop_toBottomOf="@id/text_massege"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="10dp"/>
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintVertical_bias="0.060000002" />
 
-    </RadioGroup>
+
 
 
 
