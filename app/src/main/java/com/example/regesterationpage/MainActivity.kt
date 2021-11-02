@@ -23,12 +23,15 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     fun infoUser (){
 
-        val nameuser = binding.editTextDate.text
-        val email = binding.editTextTextEmailAddress.text
-        val birthdate = binding.editTextDate.text.toString()
-        val password = binding.editTextNumberPassword.text.toString()
-        val password2 = binding.editTextNumberPassword2.text.toString()
+        val nameuser = binding.userName.editText.toString()
+
+        val email = binding.editTextTextEmailAddress.editText
+        val birthdate = binding.editTextDate.editText.toString()
+        val password = binding.editTextNumberPassword.editText.toString()
+        val password2 = binding.editTextNumberPassword2.editText.toString()
         val finaltextmasseg = binding.textMassege
+
+
 
 
         //chek the name, email ,password, and birthday date its wrote or not
