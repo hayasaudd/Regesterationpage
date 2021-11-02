@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         val nameuser = binding.userName.editText.toString()
 
-        val email = binding.editTextTextEmailAddress.text
-        val birthdate = binding.editTextDate.text.toString()
-        val password = binding.editTextNumberPassword.text.toString()
-        val password2 = binding.editTextNumberPassword2.text.toString()
+        val email = binding.editTextTextEmailAddress.editText
+        val birthdate = binding.editTextDate.editText.toString()
+        val password = binding.editTextNumberPassword.editText.toString()
+        val password2 = binding.editTextNumberPassword2.editText.toString()
         val finaltextmasseg = binding.textMassege
 
 
